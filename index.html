@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudharsan's Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; background: #f5f7fa; color: #333; overflow-x: hidden; }
+    header { background: linear-gradient(135deg, #667eea, #764ba2); padding: 2rem; text-align: center; color: #fff; position: sticky; top: 0; z-index: 1000; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: 600; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 5rem 2rem; text-align: center; }
+    .hero { min-height: 90vh; display: flex; flex-direction: column; justify-content: center; background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') no-repeat center/cover; color: white; backdrop-filter: brightness(0.6); }
+    .hero h1 { font-size: 3rem; animation: slidein 2s ease-out; }
+    .hero p { margin-top: 1rem; font-size: 1.2rem; animation: fadein 3s ease-out; }
+    @keyframes slidein { from { transform: translateY(-100px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+    .projects img { width: 300px; height: 200px; object-fit: cover; margin: 1rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: transform 0.3s; }
+    .projects img:hover { transform: scale(1.05); }
+    .skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; }
+    .skill { background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s, background 0.3s; }
+    .skill:hover { transform: translateY(-10px); background: #eef2f3; }
+    .contact form { display: flex; flex-direction: column; max-width: 500px; margin: auto; gap: 1rem; }
+    input, textarea { padding: 1rem; border: none; border-radius: 8px; background: #eef2f3; }
+    button { padding: 1rem; border: none; background: #667eea; color: white; border-radius: 8px; font-weight: bold; transition: background 0.3s; }
+    button:hover { background: #5a67d8; cursor: pointer; }
+    footer { background: #333; color: #eee; padding: 1rem; text-align: center; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sudharsan's Portfolio</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero" data-aos="fade-up">
+  <h1>Hello, I'm Sudharsan</h1>
+  <p>Creative Developer & Tech Enthusiast 🚀</p>
+</section>
+
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>I'm a passionate developer from Tiruchengode, currently studying at Karpagam Academy, Coimbatore. I love building creative solutions and exploring new techs!</p>
+</section>
+
+<section id="projects" class="projects" data-aos="fade-up">
+  <h2>Projects</h2>
+  <div>
+    <img src="https://i.ytimg.com/vi/UY7F37KHyI8/maxresdefault.jpg" alt="Project 1">
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Project 2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuKEXp1cIbFRx9f1lmvTcgDTWIs_Ps4Gg4EA&s" alt="Project 3">
+  </div>
+</section>
+
+<section id="skills" class="skills" data-aos="fade-up">
+  <h2>Skills</h2>
+  <div class="skill">C</div>
+  <div class="skill">C++</div>
+  <div class="skill">Python</div>
+  <div class="skill">Java</div>
+  <div class="skill">HTML5</div>
+  <div class="skill">CSS3</div>
+  <div class="skill">JavaScript</div>
+  <div class="skill">GitHub</div>
+</section>
+
+<section id="contact" class="contact" data-aos="fade-up">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Sudharsan | Built with ❤️</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ duration: 1200 });
+</script>
+
+</body>
+</html>
